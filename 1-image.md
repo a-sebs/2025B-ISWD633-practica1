@@ -14,13 +14,20 @@ docker pull <nombre imagen>:<tag>
 ```
 
 Descargar la imagen **hello-world**
-# COMPLETAR
+```
+docker pull hello-world
+```
 
 **¿Qué es nginx**
-# COMPLETAR 
+```
+Es un servidor web, proxy inverso y balanceador de carga de código abierto de alto rendimiento
+```
 
 Descargar la imagen  **nginx** en la versión **alpine**
-# COMPLETAR
+
+```
+docker pull nginx
+```
 
 ### Listar imágenes
 
@@ -28,7 +35,8 @@ Descargar la imagen  **nginx** en la versión **alpine**
 docker images
 ```
 
-# COLOCAR UNA CAPTURA DE PANTALLA DEL RESULTADO 
+<img width="984" height="522" alt="image" src="https://github.com/user-attachments/assets/b2650dba-d11e-4b0d-b564-7e91c287d2db" />
+
 
 **Identificadores**
 
@@ -43,10 +51,18 @@ docker inspect <nombre imagen>:<tag>
 ```
 
 Inspeccionar la imagen hello-world 
-# COMPLETAR
+```
+docker inspet hello-world
+```
+
+<img width="819" height="351" alt="image" src="https://github.com/user-attachments/assets/ca0ca91f-92ce-404a-99ce-ed86f33b4614" />
+
 
 **¿Con qué algoritmo se está generando el ID de la imagen**
-# COMPLETAR
+```
+Mediante un hash criptográfico de la imagen, y típicamente se utiliza el algoritmo SHA256
+
+```
 
 ### Filtrar imágenes
 
@@ -54,6 +70,9 @@ Inspeccionar la imagen hello-world
 docker images | grep <termino a buscar>
 
 ```
+
+<img width="522" height="223" alt="image" src="https://github.com/user-attachments/assets/c9548773-863a-4009-8af4-f80cbd5939d4" />
+
 
 ### Para eliminar una imagen
 Eliminar permanentemente la imagen de tu sistema Docker.
@@ -63,7 +82,9 @@ docker rmi <nombre imagen>:<tag>
 ```
 
 Eliminar la imagen hello-world 
-# COMPLETAR
+
+<img width="773" height="126" alt="image" src="https://github.com/user-attachments/assets/73e1665c-90cf-4364-b09b-ac2ebdd83f90" />
+
 
 -f: Es la opción para forzar la eliminación de la imagen incluso si hay contenedores en ejecución que utilizan esa imagen.
 Cuando eliminas una imagen Docker, Docker no elimina automáticamente los contenedores que se han creado a partir de esa imagen. Esto significa que, aunque hayas eliminado la imagen, el contenedor seguirá ejecutándose normalmente.  
