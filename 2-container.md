@@ -7,6 +7,7 @@ Para crear un nuevo contenedor Docker a partir de una imagen específica, pero s
 docker create --name <nombre contenedor> <nombre imagen>:<tag>
 ```
 Crear el contenedor  **srv-web** usando la imagen nginx version alpine
+
 <img width="526" height="99" alt="image" src="https://github.com/user-attachments/assets/fcf78bdf-a723-4805-850b-6ab2da6899f7" />
 
 
